@@ -13,21 +13,35 @@
 		A66F505D2192F3310051981E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505C2192F3310051981E /* Live.storyboard */; };
 		A66F505F2192F34A0051981E /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505E2192F34A0051981E /* Follow.storyboard */; };
 		A66F50612192F3600051981E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F50602192F3600051981E /* Profile.storyboard */; };
+		A66F50712194121C0051981E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F50702194121C0051981E /* HomeViewController.swift */; };
+		A66F507421941BF30051981E /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F507321941BF30051981E /* UIBarButtonItem-Extension.swift */; };
+		A66F5079219430750051981E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F5077219430750051981E /* MainViewController.swift */; };
+		A66F507B2194308E0051981E /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F507A2194308E0051981E /* PageTitleView.swift */; };
+		A66F507D219432BA0051981E /* Conmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F507C219432BA0051981E /* Conmon.swift */; };
 		A6D6BE1A2191822A00D23AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6BE192191822A00D23AFE /* AppDelegate.swift */; };
 		A6D6BE242191822B00D23AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D6BE222191822B00D23AFE /* LaunchScreen.storyboard */; };
+		BF8F1DC2C6FC59FD77B8F96F /* Pods_Douyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07741F4BDA5C46001A579EBA /* Pods_Douyu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07741F4BDA5C46001A579EBA /* Pods_Douyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D0DE33B13E5707C212AAA6 /* Pods-Douyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Douyu/Pods-Douyu.release.xcconfig"; sourceTree = "<group>"; };
 		A604DEEC2192CFEB0001E32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66F50582192EC9F0051981E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A66F505A2192F3170051981E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A66F505C2192F3310051981E /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		A66F505E2192F34A0051981E /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		A66F50602192F3600051981E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A66F50702194121C0051981E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A66F507321941BF30051981E /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		A66F5077219430750051981E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A66F507A2194308E0051981E /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		A66F507C219432BA0051981E /* Conmon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conmon.swift; sourceTree = "<group>"; };
 		A6D6BE162191822A00D23AFE /* Douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D6BE192191822A00D23AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D6BE232191822B00D23AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D6BE252191822B00D23AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA561F17F7247C8B701D62DB /* Pods-Douyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douyu/Pods-Douyu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,20 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8F1DC2C6FC59FD77B8F96F /* Pods_Douyu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21AE42E69FED68697DE74316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07741F4BDA5C46001A579EBA /* Pods_Douyu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62373EE364253D9619D34531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA561F17F7247C8B701D62DB /* Pods-Douyu.debug.xcconfig */,
+				A2D0DE33B13E5707C212AAA6 /* Pods-Douyu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A604DEEE2192D3C30001E32C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				A604DEF32192D3C30001E32C /* Main */,
 				A604DEEF2192D3C30001E32C /* Home */,
-				A604DEF02192D3C30001E32C /* Profile */,
-				A604DEF12192D3C30001E32C /* Fellow */,
 				A604DEF22192D3C30001E32C /* Live */,
+				A604DEF12192D3C30001E32C /* Fellow */,
+				A604DEF02192D3C30001E32C /* Profile */,
 				A604DEF42192D3E80001E32C /* Tools */,
 			);
 			path = Classes;
@@ -57,6 +89,10 @@
 		A604DEEF2192D3C30001E32C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A66F505A2192F3170051981E /* Home.storyboard */,
+				A66F5065219411B70051981E /* Controller */,
+				A66F5066219411B70051981E /* Model */,
+				A66F5064219411B70051981E /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -64,6 +100,10 @@
 		A604DEF02192D3C30001E32C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A66F50602192F3600051981E /* Profile.storyboard */,
+				A66F5067219411C50051981E /* Controller */,
+				A66F5068219411C50051981E /* Model */,
+				A66F5069219411C50051981E /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -71,6 +111,10 @@
 		A604DEF12192D3C30001E32C /* Fellow */ = {
 			isa = PBXGroup;
 			children = (
+				A66F505E2192F34A0051981E /* Follow.storyboard */,
+				A66F506B219411D10051981E /* Controller */,
+				A66F506C219411D10051981E /* Model */,
+				A66F506A219411D10051981E /* View */,
 			);
 			path = Fellow;
 			sourceTree = "<group>";
@@ -78,6 +122,10 @@
 		A604DEF22192D3C30001E32C /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				A66F505C2192F3310051981E /* Live.storyboard */,
+				A66F506F219411DB0051981E /* Controller */,
+				A66F506D219411DB0051981E /* Model */,
+				A66F506E219411DB0051981E /* View */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -85,11 +133,10 @@
 		A604DEF32192D3C30001E32C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A66F5076219430750051981E /* Controller */,
+				A66F5078219430750051981E /* Model */,
+				A66F5075219430750051981E /* View */,
 				A66F50582192EC9F0051981E /* Main.storyboard */,
-				A66F50602192F3600051981E /* Profile.storyboard */,
-				A66F505E2192F34A0051981E /* Follow.storyboard */,
-				A66F505C2192F3310051981E /* Live.storyboard */,
-				A66F505A2192F3170051981E /* Home.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -97,8 +144,126 @@
 		A604DEF42192D3E80001E32C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A66F507C219432BA0051981E /* Conmon.swift */,
+				A66F507221941BDE0051981E /* Extensions */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		A66F5064219411B70051981E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66F5065219411B70051981E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A66F50702194121C0051981E /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A66F5066219411B70051981E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A66F5067219411C50051981E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A66F5068219411C50051981E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A66F5069219411C50051981E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66F506A219411D10051981E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66F506B219411D10051981E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A66F506C219411D10051981E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A66F506D219411DB0051981E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A66F506E219411DB0051981E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66F506F219411DB0051981E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A66F507221941BDE0051981E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A66F507321941BF30051981E /* UIBarButtonItem-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A66F5075219430750051981E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A66F507A2194308E0051981E /* PageTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66F5076219430750051981E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A66F5077219430750051981E /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A66F5078219430750051981E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A6D6BE0D2191822A00D23AFE = {
@@ -106,6 +271,8 @@
 			children = (
 				A6D6BE182191822A00D23AFE /* Douyu */,
 				A6D6BE172191822A00D23AFE /* Products */,
+				62373EE364253D9619D34531 /* Pods */,
+				21AE42E69FED68697DE74316 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D6BE282191822B00D23AFE /* Build configuration list for PBXNativeTarget "Douyu" */;
 			buildPhases = (
+				06C5861CBC7F6B9DB97209D5 /* [CP] Check Pods Manifest.lock */,
 				A6D6BE122191822A00D23AFE /* Sources */,
 				A6D6BE132191822A00D23AFE /* Frameworks */,
 				A6D6BE142191822A00D23AFE /* Resources */,
+				DB72C44CAB95F792EE0EDD35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,12 +368,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06C5861CBC7F6B9DB97209D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Douyu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB72C44CAB95F792EE0EDD35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Douyu/Pods-Douyu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Douyu/Pods-Douyu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6D6BE122191822A00D23AFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A6D6BE1A2191822A00D23AFE /* AppDelegate.swift in Sources */,
+				A66F507421941BF30051981E /* UIBarButtonItem-Extension.swift in Sources */,
+				A66F507B2194308E0051981E /* PageTitleView.swift in Sources */,
+				A66F50712194121C0051981E /* HomeViewController.swift in Sources */,
+				A66F5079219430750051981E /* MainViewController.swift in Sources */,
+				A66F507D219432BA0051981E /* Conmon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +555,7 @@
 		};
 		A6D6BE292191822B00D23AFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA561F17F7247C8B701D62DB /* Pods-Douyu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -360,6 +576,7 @@
 		};
 		A6D6BE2A2191822B00D23AFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D0DE33B13E5707C212AAA6 /* Pods-Douyu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

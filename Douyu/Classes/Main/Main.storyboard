@@ -9,65 +9,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="n37-4v-Tpe">
             <objects>
-                <tabBarController id="R5i-vY-dGJ" sceneMemberID="viewController">
+                <tabBarController id="R5i-vY-dGJ" customClass="MainViewController" customModule="Douyu" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lpa-n1-UhY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="Cdc-uv-ICx" kind="relationship" relationship="viewControllers" id="EiT-l7-QoE"/>
-                        <segue destination="cwl-xE-kmZ" kind="relationship" relationship="viewControllers" id="MqD-tL-6qe"/>
-                        <segue destination="chL-J7-FQS" kind="relationship" relationship="viewControllers" id="igf-kj-JTB"/>
-                        <segue destination="U8S-np-LLf" kind="relationship" relationship="viewControllers" id="XHJ-7H-gD1"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwS-N4-kJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1588" y="213"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="NpD-Ob-NaQ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="Cdc-uv-ICx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Cht-ex-IvU"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0JF-mV-Yxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="156" y="-734.48275862068976"/>
-        </scene>
-        <!--Live-->
-        <scene sceneID="RB6-hm-Qut">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Live" id="cwl-xE-kmZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="EOL-bA-ttf"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7xy-wZ-p59" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="156" y="-51"/>
-        </scene>
-        <!--Follow-->
-        <scene sceneID="OkB-3w-lNF">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Follow" id="chL-J7-FQS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VfQ-um-1Ah"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqj-sT-BkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="201" y="684"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="WkA-jB-TwD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="U8S-np-LLf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Nia-bU-UOy"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7c7-Nc-6EL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="201" y="1386"/>
         </scene>
     </scenes>
 </document>
