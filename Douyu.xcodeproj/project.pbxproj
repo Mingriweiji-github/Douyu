@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A604DEED2192CFEB0001E32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A604DEEC2192CFEB0001E32C /* Assets.xcassets */; };
+		A61C6D7A219966B500161F6C /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C6D79219966B500161F6C /* RecommandViewController.swift */; };
+		A61C6D7D21997B9D00161F6C /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C6D7B21997B9D00161F6C /* CollectionReusableView.swift */; };
+		A61C6D7E21997B9D00161F6C /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61C6D7C21997B9D00161F6C /* CollectionReusableView.xib */; };
 		A66F50592192EC9F0051981E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F50582192EC9F0051981E /* Main.storyboard */; };
 		A66F505B2192F3170051981E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505A2192F3170051981E /* Home.storyboard */; };
 		A66F505D2192F3310051981E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505C2192F3310051981E /* Live.storyboard */; };
@@ -29,6 +32,9 @@
 		07741F4BDA5C46001A579EBA /* Pods_Douyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D0DE33B13E5707C212AAA6 /* Pods-Douyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Douyu/Pods-Douyu.release.xcconfig"; sourceTree = "<group>"; };
 		A604DEEC2192CFEB0001E32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61C6D79219966B500161F6C /* RecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
+		A61C6D7B21997B9D00161F6C /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		A61C6D7C21997B9D00161F6C /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		A66F50582192EC9F0051981E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A66F505A2192F3170051981E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A66F505C2192F3310051981E /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 		A66F5064219411B70051981E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A61C6D7B21997B9D00161F6C /* CollectionReusableView.swift */,
+				A61C6D7C21997B9D00161F6C /* CollectionReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				A66F50702194121C0051981E /* HomeViewController.swift */,
+				A61C6D79219966B500161F6C /* RecommandViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 				A604DEED2192CFEB0001E32C /* Assets.xcassets in Resources */,
 				A66F505D2192F3310051981E /* Live.storyboard in Resources */,
 				A66F505B2192F3170051981E /* Home.storyboard in Resources */,
+				A61C6D7E21997B9D00161F6C /* CollectionReusableView.xib in Resources */,
 				A66F50612192F3600051981E /* Profile.storyboard in Resources */,
 				A66F505F2192F34A0051981E /* Follow.storyboard in Resources */,
 			);
@@ -423,10 +433,12 @@
 				A6D6BE1A2191822A00D23AFE /* AppDelegate.swift in Sources */,
 				A66F507421941BF30051981E /* UIBarButtonItem-Extension.swift in Sources */,
 				A66F507B2194308E0051981E /* PageTitleView.swift in Sources */,
+				A61C6D7D21997B9D00161F6C /* CollectionReusableView.swift in Sources */,
 				A66F507F219532B60051981E /* PageContentView.swift in Sources */,
 				A66F50712194121C0051981E /* HomeViewController.swift in Sources */,
 				A66F5081219537960051981E /* UIColor-Extensions.swift in Sources */,
 				A66F5079219430750051981E /* MainViewController.swift in Sources */,
+				A61C6D7A219966B500161F6C /* RecommandViewController.swift in Sources */,
 				A66F507D219432BA0051981E /* Conmon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

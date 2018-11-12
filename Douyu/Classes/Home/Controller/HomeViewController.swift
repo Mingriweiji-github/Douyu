@@ -11,7 +11,7 @@ import UIKit
 private let kTitleViewH: CGFloat = 40
 
 class HomeViewController: UIViewController {
-
+ 
     //设置懒加载属性
     lazy var pageTitleView: PageTitleView = {[weak self] in
         let frame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width:kScreenW , height: kTitleViewH)
@@ -23,9 +23,11 @@ class HomeViewController: UIViewController {
     
     lazy var pageContentView: PageContentView = {[weak self] in
         let frameY = kStatusBarH + kNavigationBarH + kTitleViewH
-        let frame = CGRect(x: 0, y: frameY, width: kScreenW, height: kScreenH - frameY)
+        let frame = CGRect(x: 0, y: frameY, width: kScreenW, height: kScreenH - frameY - ktabBarH)
         var childrens = [UIViewController]()
-        for _ in 0..<4 {
+        childrens.append(RecommandViewController())
+        
+        for _ in 0..<3 {
             let child = UIViewController()
             child.view.backgroundColor = UIColor(
                 r: CGFloat(arc4random_uniform(255)),
@@ -36,7 +38,7 @@ class HomeViewController: UIViewController {
         }
         
         let contentView = PageContentView(frame: frame, childs: childrens, parentViewController: self)
-        contentView.delegate = self as! PageContentViewDelegate
+        contentView.delegate = self
         return contentView
     }()
     
