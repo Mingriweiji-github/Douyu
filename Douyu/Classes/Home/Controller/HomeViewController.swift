@@ -13,13 +13,32 @@ private let kTitleViewH: CGFloat = 40
 class HomeViewController: UIViewController {
 
     //设置懒加载属性
-    lazy var pageTitleView: PageTitleView = {
+    lazy var pageTitleView: PageTitleView = {[weak self] in
         let frame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width:kScreenW , height: kTitleViewH)
         let titles = ["推荐","游戏","颜值","户外",] //"旅游","英雄联盟","穿越火线"
         let titleView = PageTitleView.init(frame: frame, titles: titles)
+        titleView.delegate = self as! PageTitleViewDelegate
         return titleView
     }()
     
+    lazy var pageContentView: PageContentView = {[weak self] in
+        let frameY = kStatusBarH + kNavigationBarH + kTitleViewH
+        let frame = CGRect(x: 0, y: frameY, width: kScreenW, height: kScreenH - frameY)
+        var childrens = [UIViewController]()
+        for _ in 0..<4 {
+            let child = UIViewController()
+            child.view.backgroundColor = UIColor(
+                r: CGFloat(arc4random_uniform(255)),
+                g: CGFloat(arc4random_uniform(255)),
+                b: CGFloat(arc4random_uniform(255))
+            )
+            childrens.append(child)
+        }
+        
+        let contentView = PageContentView(frame: frame, childs: childrens, parentViewController: self)
+        contentView.delegate = self as! PageContentViewDelegate
+        return contentView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +56,9 @@ extension HomeViewController {
         setupNavigation()
         //2.设置titleView(UIView 自定义构造函数)
         view.addSubview(self.pageTitleView)
+        
+        view.addSubview(self.pageContentView)
+        self.pageContentView.backgroundColor = UIColor.orange
     }
     private func setupNavigation() {
         
@@ -50,5 +72,18 @@ extension HomeViewController {
         navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcodeItem]
     }
     
-    
+}
+//MARK: - 准守PageTitleViewDelegate
+extension HomeViewController: PageTitleViewDelegate {
+    func pageTitleView(titleView: PageTitleView, selectedIndex index: Int){
+        pageContentView.setCurrentIndex(currentIndex: index)
+    }
+
+}
+//MARK: - 准守PageContentViewDelegate
+extension HomeViewController: PageContentViewDelegate {
+    func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: CGFloat, endIndex: CGFloat)
+    {
+        pageTitleView.setTitleWithProgress(progress: progress, startIndex: Int(sourceIndex), targetIndex: Int(endIndex))
+    }
 }
