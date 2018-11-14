@@ -13,6 +13,8 @@
 		A61C6D7E21997B9D00161F6C /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61C6D7C21997B9D00161F6C /* CollectionReusableView.xib */; };
 		A61C6D81219980C900161F6C /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C6D7F219980C900161F6C /* CollectionNormalCell.swift */; };
 		A61C6D82219980C900161F6C /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61C6D80219980C900161F6C /* CollectionNormalCell.xib */; };
+		A61C6D85219ABCE600161F6C /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C6D83219ABCE600161F6C /* CollectionPrettyCell.swift */; };
+		A61C6D86219ABCE700161F6C /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61C6D84219ABCE600161F6C /* CollectionPrettyCell.xib */; };
 		A66F50592192EC9F0051981E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F50582192EC9F0051981E /* Main.storyboard */; };
 		A66F505B2192F3170051981E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505A2192F3170051981E /* Home.storyboard */; };
 		A66F505D2192F3310051981E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505C2192F3310051981E /* Live.storyboard */; };
@@ -39,6 +41,8 @@
 		A61C6D7C21997B9D00161F6C /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
 		A61C6D7F219980C900161F6C /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		A61C6D80219980C900161F6C /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		A61C6D83219ABCE600161F6C /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		A61C6D84219ABCE600161F6C /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		A66F50582192EC9F0051981E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A66F505A2192F3170051981E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A66F505C2192F3310051981E /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				A66F507E219532B60051981E /* PageContentView.swift */,
 				A61C6D7F219980C900161F6C /* CollectionNormalCell.swift */,
 				A61C6D80219980C900161F6C /* CollectionNormalCell.xib */,
+				A61C6D83219ABCE600161F6C /* CollectionPrettyCell.swift */,
+				A61C6D84219ABCE600161F6C /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				A66F505D2192F3310051981E /* Live.storyboard in Resources */,
 				A66F505B2192F3170051981E /* Home.storyboard in Resources */,
 				A61C6D7E21997B9D00161F6C /* CollectionReusableView.xib in Resources */,
+				A61C6D86219ABCE700161F6C /* CollectionPrettyCell.xib in Resources */,
 				A66F50612192F3600051981E /* Profile.storyboard in Resources */,
 				A66F505F2192F34A0051981E /* Follow.storyboard in Resources */,
 			);
@@ -446,6 +453,7 @@
 				A66F5081219537960051981E /* UIColor-Extensions.swift in Sources */,
 				A66F5079219430750051981E /* MainViewController.swift in Sources */,
 				A61C6D7A219966B500161F6C /* RecommandViewController.swift in Sources */,
+				A61C6D85219ABCE600161F6C /* CollectionPrettyCell.swift in Sources */,
 				A61C6D81219980C900161F6C /* CollectionNormalCell.swift in Sources */,
 				A66F507D219432BA0051981E /* Conmon.swift in Sources */,
 			);

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kPrettyCell" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="Douyu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="219"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF3-4h-sn4">
+                        <rect key="frame" x="0.0" y="194" width="46" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="5OD-qs-MBA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="北京市" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市大栅栏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-ix-Y93">
+                        <rect key="frame" x="0.0" y="168" width="284" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="I4Z-Aa-zAn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-Yq-hUK">
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="163"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pI-qb-pwX">
+                        <rect key="frame" x="238" y="5" width="51" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GF3-4h-sn4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Xj-oB-dY9"/>
+                <constraint firstItem="Veq-Yq-hUK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B76-lK-9Qt"/>
+                <constraint firstItem="GF3-4h-sn4" firstAttribute="top" secondItem="Vi6-ix-Y93" secondAttribute="bottom" constant="5" id="GCY-rH-xGg"/>
+                <constraint firstAttribute="trailing" secondItem="Vi6-ix-Y93" secondAttribute="trailing" constant="10" id="GJn-Dt-quV"/>
+                <constraint firstItem="Vi6-ix-Y93" firstAttribute="top" secondItem="Veq-Yq-hUK" secondAttribute="bottom" constant="5" id="KCN-Y0-ldi"/>
+                <constraint firstAttribute="trailing" secondItem="Veq-Yq-hUK" secondAttribute="trailing" id="QCO-pc-FiQ"/>
+                <constraint firstItem="Veq-Yq-hUK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b1i-Xk-dEl"/>
+                <constraint firstAttribute="bottom" secondItem="GF3-4h-sn4" secondAttribute="bottom" constant="10" id="kP5-QU-ni7"/>
+                <constraint firstItem="Vi6-ix-Y93" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wA4-uo-nf2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="294" height="219"/>
+            <point key="canvasLocation" x="185.59999999999999" y="-74.212893553223395"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103.5" height="103.5"/>
+    </resources>
+</document>
