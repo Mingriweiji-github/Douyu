@@ -15,14 +15,14 @@ class RecommandVIewModel: BaseViewModel {
 }
 extension RecommandVIewModel {
     func requestData(_ finishedCallback: @escaping() -> ()) {
-        //1.请求第一部分数据:推荐
+
         //1.1定义参数
         let param = ["time": Date.getCurrentTime(),"limit":4,"offset":"0"] as [String : Any]
         print(param)
-        //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1542269597
         //1.2.创建group
         let dGroup = DispatchGroup()
         //1.3请求推荐数据
+        //API:http://capi.douyucdn.cn/api/v1/getbigDataRoom?time=1542269597
         dGroup.enter()
         NetworkTool.requestData(type: .get, urlString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", param: param) { (result) in
             
@@ -35,16 +35,16 @@ extension RecommandVIewModel {
             //获取主播数据
             for dic in dataArray {
                 let anchor = AnchorModel(dict: dic)
-                print(anchor.nickname)
-                print("------")
                 self.bigDataGroup.anchors.append(anchor)
             }
-            
             dGroup.leave()
+            print("第0组数据")
+
         }
         
         
-        //2.请求第二部分:颜值
+        //2.请求第二部分:颜值:http://capi.douyucdn.cn/api/v1/getVerticalRoom
+        //API: http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=4&offset=0&time=1542269597
         dGroup.enter()
         NetworkTool.requestData(type: .get, urlString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom") { (res) in
             guard let resultDic = res as? [String: NSObject] else {return}
@@ -55,25 +55,37 @@ extension RecommandVIewModel {
                 let anchor = AnchorModel(dict: dict)
                 self.prettyGroup.anchors.append(anchor)
             }
-            
             dGroup.leave()
+            print("第1组数据")
+
         }
-        //3.请求第三部分:游戏
+        //3.请求第三部分:游戏-http://capi.douyucdn.cn/api/v1/getHotCate
         dGroup.enter()
-        loadAnchorData(isGroupData: true, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", params: param) {
+//        loadAnchorData(isGroupData: true, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", params: param) {
+//            dGroup.leave()
+//        }
+        NetworkTool.requestData(type: .get, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", param: param) { (res) in
+            guard let resultDic = res as? [String: NSObject] else { return }
+            guard let dataArray = resultDic["data"] as? [[String: NSObject]] else { return }
+            
+            for dict in dataArray {
+                let group = AnchorGroup(dict: dict)
+                self.anchorGroups.append(group)
+            }
+            
+            print("第2-12组数据")
             dGroup.leave()
+            //warning:leave如果不能成对和enter出现的话,dispatchGroup.notify就不进入了
         }
         
-        //所有数据请求到以后,排序'
+        //所有数据请求到以后,排序
         dGroup.notify(queue: DispatchQueue.main) {
+            print("请求所有数据 排序")
             self.anchorGroups.insert(self.prettyGroup, at: 0)
             self.anchorGroups.insert(self.bigDataGroup, at: 0)
-            
             finishedCallback()
         }
         
     }
-    
-    
 
 }
