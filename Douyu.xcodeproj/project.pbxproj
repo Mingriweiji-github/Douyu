@@ -15,6 +15,8 @@
 		A61C6D82219980C900161F6C /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61C6D80219980C900161F6C /* CollectionNormalCell.xib */; };
 		A61C6D85219ABCE600161F6C /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C6D83219ABCE600161F6C /* CollectionPrettyCell.swift */; };
 		A61C6D86219ABCE700161F6C /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61C6D84219ABCE600161F6C /* CollectionPrettyCell.xib */; };
+		A62082E8219C0C4B006FA408 /* Pods_Douyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62082E7219C0C4B006FA408 /* Pods_Douyu.framework */; };
+		A63176F6219C1E6200D08C00 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63176F5219C1E6200D08C00 /* NetworkTool.swift */; };
 		A66F50592192EC9F0051981E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F50582192EC9F0051981E /* Main.storyboard */; };
 		A66F505B2192F3170051981E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505A2192F3170051981E /* Home.storyboard */; };
 		A66F505D2192F3310051981E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66F505C2192F3310051981E /* Live.storyboard */; };
@@ -27,9 +29,14 @@
 		A66F507D219432BA0051981E /* Conmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F507C219432BA0051981E /* Conmon.swift */; };
 		A66F507F219532B60051981E /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F507E219532B60051981E /* PageContentView.swift */; };
 		A66F5081219537960051981E /* UIColor-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F5080219537960051981E /* UIColor-Extensions.swift */; };
+		A67FBA98219D5C1A00B970F1 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBA97219D5C1A00B970F1 /* NSDate-Extension.swift */; };
+		A67FBA9A219D63E900B970F1 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBA99219D63E900B970F1 /* AnchorGroup.swift */; };
+		A67FBA9C219D6B0600B970F1 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBA9B219D6B0600B970F1 /* AnchorModel.swift */; };
+		A67FBA9E219D6E8200B970F1 /* RecommandVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBA9D219D6E8200B970F1 /* RecommandVIewModel.swift */; };
+		A67FBAA1219D6F3500B970F1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBAA0219D6F3500B970F1 /* BaseViewModel.swift */; };
+		A67FBAA3219D71A800B970F1 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBAA2219D71A800B970F1 /* BaseGameModel.swift */; };
 		A6D6BE1A2191822A00D23AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6BE192191822A00D23AFE /* AppDelegate.swift */; };
 		A6D6BE242191822B00D23AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D6BE222191822B00D23AFE /* LaunchScreen.storyboard */; };
-		BF8F1DC2C6FC59FD77B8F96F /* Pods_Douyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07741F4BDA5C46001A579EBA /* Pods_Douyu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,9 @@
 		A61C6D80219980C900161F6C /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		A61C6D83219ABCE600161F6C /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		A61C6D84219ABCE600161F6C /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		A62082E5219C0ABF006FA408 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62082E7219C0C4B006FA408 /* Pods_Douyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Douyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63176F5219C1E6200D08C00 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		A66F50582192EC9F0051981E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A66F505A2192F3170051981E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A66F505C2192F3310051981E /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
@@ -55,6 +65,12 @@
 		A66F507C219432BA0051981E /* Conmon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conmon.swift; sourceTree = "<group>"; };
 		A66F507E219532B60051981E /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		A66F5080219537960051981E /* UIColor-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extensions.swift"; sourceTree = "<group>"; };
+		A67FBA97219D5C1A00B970F1 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		A67FBA99219D63E900B970F1 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		A67FBA9B219D6B0600B970F1 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		A67FBA9D219D6E8200B970F1 /* RecommandVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandVIewModel.swift; sourceTree = "<group>"; };
+		A67FBAA0219D6F3500B970F1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A67FBAA2219D71A800B970F1 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		A6D6BE162191822A00D23AFE /* Douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D6BE192191822A00D23AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D6BE232191822B00D23AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8F1DC2C6FC59FD77B8F96F /* Pods_Douyu.framework in Frameworks */,
+				A62082E8219C0C4B006FA408 /* Pods_Douyu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +93,8 @@
 		21AE42E69FED68697DE74316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A62082E7219C0C4B006FA408 /* Pods_Douyu.framework */,
+				A62082E5219C0ABF006FA408 /* Alamofire.framework */,
 				07741F4BDA5C46001A579EBA /* Pods_Douyu.framework */,
 			);
 			name = Frameworks;
@@ -107,6 +125,7 @@
 		A604DEEF2192D3C30001E32C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A69BEF9C219D200200706FA1 /* ViewModel */,
 				A66F505A2192F3170051981E /* Home.storyboard */,
 				A66F5065219411B70051981E /* Controller */,
 				A66F5066219411B70051981E /* Model */,
@@ -151,6 +170,7 @@
 		A604DEF32192D3C30001E32C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A67FBA9F219D6F2800B970F1 /* ViewModel */,
 				A66F5076219430750051981E /* Controller */,
 				A66F5078219430750051981E /* Model */,
 				A66F5075219430750051981E /* View */,
@@ -162,6 +182,7 @@
 		A604DEF42192D3E80001E32C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A63176F5219C1E6200D08C00 /* NetworkTool.swift */,
 				A66F507C219432BA0051981E /* Conmon.swift */,
 				A66F507221941BDE0051981E /* Extensions */,
 			);
@@ -261,6 +282,7 @@
 			children = (
 				A66F507321941BF30051981E /* UIBarButtonItem-Extension.swift */,
 				A66F5080219537960051981E /* UIColor-Extensions.swift */,
+				A67FBA97219D5C1A00B970F1 /* NSDate-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,8 +311,27 @@
 		A66F5078219430750051981E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A67FBA99219D63E900B970F1 /* AnchorGroup.swift */,
+				A67FBA9B219D6B0600B970F1 /* AnchorModel.swift */,
+				A67FBAA2219D71A800B970F1 /* BaseGameModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A67FBA9F219D6F2800B970F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A67FBAA0219D6F3500B970F1 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A69BEF9C219D200200706FA1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A67FBA9D219D6E8200B970F1 /* RecommandVIewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A6D6BE0D2191822A00D23AFE = {
@@ -447,15 +488,22 @@
 				A6D6BE1A2191822A00D23AFE /* AppDelegate.swift in Sources */,
 				A66F507421941BF30051981E /* UIBarButtonItem-Extension.swift in Sources */,
 				A66F507B2194308E0051981E /* PageTitleView.swift in Sources */,
+				A63176F6219C1E6200D08C00 /* NetworkTool.swift in Sources */,
+				A67FBAA3219D71A800B970F1 /* BaseGameModel.swift in Sources */,
+				A67FBA9A219D63E900B970F1 /* AnchorGroup.swift in Sources */,
 				A61C6D7D21997B9D00161F6C /* CollectionReusableView.swift in Sources */,
 				A66F507F219532B60051981E /* PageContentView.swift in Sources */,
 				A66F50712194121C0051981E /* HomeViewController.swift in Sources */,
 				A66F5081219537960051981E /* UIColor-Extensions.swift in Sources */,
 				A66F5079219430750051981E /* MainViewController.swift in Sources */,
+				A67FBA98219D5C1A00B970F1 /* NSDate-Extension.swift in Sources */,
 				A61C6D7A219966B500161F6C /* RecommandViewController.swift in Sources */,
 				A61C6D85219ABCE600161F6C /* CollectionPrettyCell.swift in Sources */,
+				A67FBAA1219D6F3500B970F1 /* BaseViewModel.swift in Sources */,
 				A61C6D81219980C900161F6C /* CollectionNormalCell.swift in Sources */,
+				A67FBA9E219D6E8200B970F1 /* RecommandVIewModel.swift in Sources */,
 				A66F507D219432BA0051981E /* Conmon.swift in Sources */,
+				A67FBA9C219D6B0600B970F1 /* AnchorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +558,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -571,6 +623,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -596,7 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YEFYT2Y9CS;
+				DEVELOPMENT_TEAM = 66WVRK438M;
 				INFOPLIST_FILE = Douyu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -605,6 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.roc.Douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -617,7 +674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YEFYT2Y9CS;
+				DEVELOPMENT_TEAM = 66WVRK438M;
 				INFOPLIST_FILE = Douyu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -626,6 +683,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.roc.Douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

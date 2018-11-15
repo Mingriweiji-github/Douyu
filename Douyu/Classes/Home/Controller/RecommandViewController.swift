@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 private let kItemMargin: CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin) / 2
@@ -18,6 +19,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommandViewController: UIViewController {
 
     //MARK: - 懒加载
+    lazy var homeVM = RecommandVIewModel()
     lazy var collectionView: UICollectionView = {[unowned self] in
         
         let layout = UICollectionViewFlowLayout()
@@ -49,6 +51,9 @@ class RecommandViewController: UIViewController {
         setupUI()
         
         getHomeData()
+
+        
+        
     }
 
 }
@@ -59,7 +64,9 @@ extension RecommandViewController {
     }
     
     func getHomeData() {
-        
+        homeVM.requestData {
+            
+        }
     }
     
 }
