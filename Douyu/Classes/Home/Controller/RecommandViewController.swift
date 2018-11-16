@@ -19,7 +19,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommandViewController: UIViewController {
 
     //MARK: - 懒加载
-    lazy var homeVM = RecommandVIewModel()
+    lazy var recommandVM = RecommandVIewModel()
     lazy var collectionView: UICollectionView = {[unowned self] in
         
         let layout = UICollectionViewFlowLayout()
@@ -64,8 +64,8 @@ extension RecommandViewController {
     }
     
     func getHomeData() {
-        homeVM.requestData {
-            
+        recommandVM.requestData {
+            self.collectionView.reloadData()
         }
     }
     
@@ -73,13 +73,16 @@ extension RecommandViewController {
 //MARK: -UICollectionViewDataSource
 extension RecommandViewController: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommandVM.anchorGroups.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+//        if section == 0 {
+//            return 8
+//        }
+//        return 4
+        let group = recommandVM.anchorGroups[section]
+        return group.anchors.count
+
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -102,7 +105,9 @@ extension RecommandViewController: UICollectionViewDataSource,UICollectionViewDe
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionReusableView
+        let group = recommandVM.anchorGroups[indexPath.section]
+        headerView.group = group
         return headerView
     }
 }
