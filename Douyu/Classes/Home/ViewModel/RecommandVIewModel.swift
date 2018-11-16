@@ -9,11 +9,15 @@
 import UIKit
 class RecommandVIewModel: BaseViewModel {
     //lazy
-//    lazy var cycleModels: [] = expression
+    lazy var cycleModels: [CycleModel] = [CycleModel]()
+    
     lazy var bigDataGroup: AnchorGroup = AnchorGroup()
+    
     lazy var prettyGroup: AnchorGroup = AnchorGroup()
 }
 extension RecommandVIewModel {
+    //请求推荐数据
+
     func requestData(_ finishedCallback: @escaping() -> ()) {
 
         //1.1定义参数
@@ -86,6 +90,27 @@ extension RecommandVIewModel {
             finishedCallback()
         }
         
+    }
+    
+    //请求Cycyle数据
+    func requestCycleData(_ finishedCallback: @escaping () -> ()) {
+        //API:http://www.douyutv.com/api/v1/slide/6?version=2.300
+        NetworkTool.requestData(type: .get, urlString: "http://www.douyutv.com/api/v1/slide/6", param: ["version" : "2.300"]) { (res) in
+            
+            print(res)
+            
+            guard let resultDic = res as? [String: NSObject] else { return }
+            
+            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
+            
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
+            
+            print(self.cycleModels)
+            
+            finishedCallback()
+        }
     }
 
 }
