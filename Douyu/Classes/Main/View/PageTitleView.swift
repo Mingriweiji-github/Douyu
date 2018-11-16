@@ -15,7 +15,7 @@ protocol PageTitleViewDelegate: class {
 //MARK: - 定义b常量
 private let kScrollLineH: CGFloat = 2
 private let kNormalColor: (CGFloat,CGFloat,CGFloat) = (85,85,85)
-private let kSeletedColor: (CGFloat,CGFloat,CGFloat) = (255,128,0)
+private let kSeletedColor: (CGFloat,CGFloat,CGFloat) = (255,128,128)
 
 //MARK: - 定义PageTitleView 类
 class PageTitleView: UIView {
@@ -116,7 +116,11 @@ extension PageTitleView {
     @objc func titleLabelClick(tapGes: UITapGestureRecognizer) {
         print("-------")
         guard let currentLabel = tapGes.view as? UILabel else { return }
+        
+        if currentLabel.tag == currentIndex { return }
+        
         let oldLabel = titleLabels[currentIndex]
+        
         currentLabel.textColor = UIColor(r: kSeletedColor.0, g: kSeletedColor.1, b: kSeletedColor.2)
         oldLabel.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
         
