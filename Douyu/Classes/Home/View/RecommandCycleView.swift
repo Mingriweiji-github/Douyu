@@ -14,6 +14,10 @@ class RecommandCycleView: UIView {
         didSet {
             collectionView.reloadData()
             pageControl.numberOfPages = cycleModels.count ?? 0
+            
+            //默认位置为600,解决第一张左滑的问题
+            let indexPath = IndexPath(item: (cycleModels.count ?? 0) * 100, section: 0)
+            collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
         }
     }
 
@@ -53,12 +57,12 @@ extension RecommandCycleView: UICollectionViewDataSource,UICollectionViewDelegat
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cycleModels.count
+        return (cycleModels.count) * 10000
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCycleCellID, for: indexPath) as! CollectionCycleCell
         
-        cell.cycleModel = self.cycleModels[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCycleCellID, for: indexPath) as! CollectionCycleCell
+        cell.cycleModel = self.cycleModels[indexPath.row % cycleModels.count]
         
         return cell
     }
@@ -66,7 +70,9 @@ extension RecommandCycleView: UICollectionViewDataSource,UICollectionViewDelegat
     //mark: UICollectionViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
-        pageControl.currentPage = Int(offsetX / kScreenW)
+        
+        //取模解决最后一张右滑问题
+        pageControl.currentPage = Int(offsetX / kScreenW) % (cycleModels.count ?? 1)
     }
     
 }
