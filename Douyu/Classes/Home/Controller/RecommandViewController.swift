@@ -16,6 +16,7 @@ private let kPrettyItemH = kItemW * 4 / 3
 private let kNormalCellID = "CollectionNormalCell"
 private let kPrettyCell = "kPrettyCell"
 private let kHeaderViewID = "kHeaderViewID"
+private let kCycleViewH = kScreenW * 3 / 8
 class RecommandViewController: UIViewController {
 
     //MARK: - 懒加载
@@ -43,17 +44,16 @@ class RecommandViewController: UIViewController {
 
         return collectionView
     }()
-    
+    lazy var cycleView: RecommandCycleView = {
+        let cycleView = RecommandCycleView.recommandCycle()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.orange
-        
         setupUI()
-        
         getHomeData()
-
-        
-        
     }
 
 }
@@ -61,6 +61,10 @@ class RecommandViewController: UIViewController {
 extension RecommandViewController {
     func setupUI() {
         view.addSubview(collectionView)
+        
+        collectionView.addSubview(cycleView)
+        //设置内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
     }
     
     func getHomeData() {
@@ -95,7 +99,7 @@ extension RecommandViewController: UICollectionViewDataSource,UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let group = recommandVM.anchorGroups[indexPath.section]
-        let anchor = group.anchors[indexPath.row]        
+        let anchor = group.anchors[indexPath.row]
         if indexPath.section == 1 {
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCell, for: indexPath) as! CollectionPrettyCell
             cell.anchor = anchor
