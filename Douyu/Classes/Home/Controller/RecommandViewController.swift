@@ -13,7 +13,7 @@ private let kItemMargin: CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
-private let kNormalCellID = "kCellIdentify"
+private let kNormalCellID = "CollectionNormalCell"
 private let kPrettyCell = "kPrettyCell"
 private let kHeaderViewID = "kHeaderViewID"
 class RecommandViewController: UIViewController {
@@ -76,13 +76,12 @@ extension RecommandViewController: UICollectionViewDataSource,UICollectionViewDe
         return recommandVM.anchorGroups.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        if section == 0 {
-//            return 8
-//        }
-//        return 4
         let group = recommandVM.anchorGroups[section]
+        if section == 1 {
+            
+            return group.anchors.count >= 6 ? 6 : group.anchors.count
+        }
         return group.anchors.count
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -95,14 +94,18 @@ extension RecommandViewController: UICollectionViewDataSource,UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        var cell: UICollectionViewCell
-        
+        let group = recommandVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.row]        
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCell, for: indexPath)
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCell, for: indexPath) as! CollectionPrettyCell
+            cell.anchor = anchor
+            return cell
+
         }else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
+            cell.model = anchor
+            return cell
         }
-        return cell
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionReusableView

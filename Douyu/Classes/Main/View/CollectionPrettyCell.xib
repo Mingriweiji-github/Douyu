@@ -21,6 +21,7 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF3-4h-sn4">
                         <rect key="frame" x="0.0" y="194" width="46" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="5OD-qs-MBA"/>
                         </constraints>
@@ -41,14 +42,14 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-Yq-hUK">
                         <rect key="frame" x="0.0" y="0.0" width="294" height="163"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pI-qb-pwX">
-                        <rect key="frame" x="238" y="5" width="51" height="14"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-QJ-HJg">
+                        <rect key="frame" x="228" y="10" width="56" height="27"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="9999在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -59,11 +60,19 @@
                 <constraint firstItem="Vi6-ix-Y93" firstAttribute="top" secondItem="Veq-Yq-hUK" secondAttribute="bottom" constant="5" id="KCN-Y0-ldi"/>
                 <constraint firstAttribute="trailing" secondItem="Veq-Yq-hUK" secondAttribute="trailing" id="QCO-pc-FiQ"/>
                 <constraint firstItem="Veq-Yq-hUK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b1i-Xk-dEl"/>
+                <constraint firstAttribute="trailing" secondItem="uWJ-QJ-HJg" secondAttribute="trailing" constant="10" id="fWN-5N-Qol"/>
                 <constraint firstAttribute="bottom" secondItem="GF3-4h-sn4" secondAttribute="bottom" constant="10" id="kP5-QU-ni7"/>
+                <constraint firstItem="uWJ-QJ-HJg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="s40-uh-wh4"/>
                 <constraint firstItem="Vi6-ix-Y93" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wA4-uo-nf2"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="294" height="219"/>
+            <connections>
+                <outlet property="iconIamgeView" destination="Veq-Yq-hUK" id="kvM-PX-NG3"/>
+                <outlet property="locLabel" destination="GF3-4h-sn4" id="flc-yO-wg8"/>
+                <outlet property="onlineButton" destination="uWJ-QJ-HJg" id="ijr-sJ-sbA"/>
+                <outlet property="titleLabel" destination="Vi6-ix-Y93" id="g6R-YF-xIs"/>
+            </connections>
             <point key="canvasLocation" x="185.59999999999999" y="-74.212893553223395"/>
         </collectionViewCell>
     </objects>
